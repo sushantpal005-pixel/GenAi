@@ -1,0 +1,19 @@
+[project]
+name = "genai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "sushantpal005-pixel", email = "sushantpal005@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain>=1.3.18",
+]
+
+[project.scripts]
+genai = "genai:main"
+
+[build-system]
+requires = ["uv_build>=0.12.8,<0.13.0"]
+build-backend = "uv_build"
