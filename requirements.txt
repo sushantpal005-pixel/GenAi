@@ -6,5 +6,6 @@ langchain-openai
 langchain-groq
 langchain-google-genai
 langchain-mistralai
+langchain_huggingface
 
 python-dotenv

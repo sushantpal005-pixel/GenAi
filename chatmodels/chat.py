@@ -33,7 +33,7 @@ load_dotenv()   #to use api keys stored in .env file
 #using model class
 
 from langchain_mistralai import ChatMistralAI
-model = ChatMistralAI(model="mistral-small-2603")
-response = model.invoke("what is cricket")
+model = ChatMistralAI(model="mistral-small-2603", temperature=0.9, max_tokens=20)
+response = model.invoke("write a poem on AI")
 print(response.content)
 
